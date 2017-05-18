@@ -10,7 +10,7 @@ $(document).ready(function() {
   //总的雷数(在初始化的时候决定 过程中不改变最后用来判断胜利的条件)
   var total;
   //是否可以标记问号
-  var ischeck = false;
+  var ischeck = true;
 
   var timer;
 
