@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+  <form>
+    <div>
+      <button id="Baginner" type="button">简单</button>
+      <button id="Intermediate" type="button">一般</button>
+      <button id="Expert" type="button">困难</button>
+      <button id="Custom" type="button">自定义</button>
+      <div id="form_custom">
+        <div>
+          <spen id="height">高:</spen>
+          <!--用正则表达式来限制输入的数据-->
+          <!--onkeyup="value=value.replace(/[^\d]/g,'')"-->
+          <input onkeyup="value=value.replace(/[^\d]/g,'')" style="ime-mode:disabled" type="text" id="text_height"></input>
+        </div>
+        <div>
+          <spen id="width">宽:</spen>
+          <input onkeyup="value=value.replace(/[^\d]/g,'')" style="ime-mode:disabled" type="text" id="text_width"></input>
+        </div>
+        <div>
+          <spen id="mains">雷:</spen>
+          <input onkeyup="value=value.replace(/[^\d]/g,'')" style="ime-mode:disabled" type="text" id="text_mains"></input>
+        </div>
+        <button id="ok" type="button">确定</button>
+        <div>
+          <spen id="alert"></spen>
+        </div>
+      </div>
+    </div>
+    <div>
+      <spen>剩余雷数:</spen>
+      <spen id="restMine"></spen>
+      <spen>当前用时:</spen>
+      <spen id="time"></spen>
+    </div>
+    <div id="main"></div>
+  </form>
+  <!--<script src="js/jquery-3.1.1.min.js"></script>-->
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/mine.js"></script>
+</body>
+
+</html>
